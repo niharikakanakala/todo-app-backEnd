@@ -8,7 +8,7 @@ const Todo = new mongoose.Schema(
       trim: true,
       maxlength: 30,
     },
-    Time: {
+    time: {
       type: Date,
 
       default: Date.now(),
