@@ -2,10 +2,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const todoRoutes = require("./routes/api");
-
+const cors = require("cors");
 const app = express();
 app.use(express.json());
-//app.use(cors());
+app.use(cors());
 // initialize routes
 app.use("/api", todoRoutes);
 

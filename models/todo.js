@@ -8,6 +8,11 @@ const Todo = new mongoose.Schema(
       trim: true,
       maxlength: 30,
     },
+    Time: {
+      type: Date,
+
+      default: Date.now(),
+    },
   },
   { timestamps: true }
 );
