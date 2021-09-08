@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const lLogin = new mongoose.Schema({
+const signin = new mongoose.Schema({
   username: {
     type: String,
     required: true,
@@ -22,4 +22,4 @@ const lLogin = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("Login", Login);
+module.exports = mongoose.model("signin", signin);
